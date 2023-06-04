@@ -67,7 +67,7 @@
 <script>
 	import {mapActions} from 'vuex'
   export default {
-    name: 'ScedulesView',
+    name: 'ContestsView',
     data: () => ({
       focus: '',
       type: 'month',
@@ -81,14 +81,14 @@
       selectedOpen: false,
       events: []
 	}),
-	created() { this.getSchedule()},
+	created() { this.getContests()},
     mounted () { this.getEvents() },
     methods: {
-		...mapActions(['getSchedule']),
+		...mapActions(['getContests']),
 
 		getEvents () {
-			const evs = this.$store.state.schedule
-			this.events = evs['schedule']
+			const cns = this.$store.state.contests
+			this.events = cns['contests']
 		},
 		viewDay ({ date }) {
 			this.focus = date

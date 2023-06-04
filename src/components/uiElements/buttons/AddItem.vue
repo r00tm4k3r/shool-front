@@ -1,6 +1,7 @@
 <template>
     <v-container>
         <v-btn class="mb-4" align-center @click="createCardWindow = true">
+            <v-icon left>mdi-account-plus-outline</v-icon>
             <span>{{text}}</span>
         </v-btn>
         

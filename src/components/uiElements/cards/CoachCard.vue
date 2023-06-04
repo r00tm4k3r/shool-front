@@ -17,7 +17,7 @@
             <v-btn
                 v-on:click="deleteCardAlert = true"
                 class="red darken-1 white--text text--darken-3 pa-5">
-                    <v-icon left>mdi-book-open-page-variant-outline</v-icon>
+                    <v-icon left>mdi-delete-empty-outline</v-icon>
                     <span>Удалить</span>
             </v-btn>
         </v-card-actions>
